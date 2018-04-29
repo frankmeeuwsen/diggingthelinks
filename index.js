@@ -63,7 +63,6 @@ function createDraft(item){
 function startup () {
 	config.newItemCallback = function (urlfeed, itemFromParser, item) { //called for each new item
     createDraft(item);
-		console.log(item.title);
 		};
 	writeFeedsList (function () {
 		reader.init (config);

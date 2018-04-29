@@ -57,9 +57,16 @@ typings/
 # dotenv environment variables file
 .env
 
+<<<<<<< HEAD
+# Output of davereader npm
+data/
+callbacks/
+_draft/
+lists/
+=======
 # Davereader dirs
 data/
 lists/
 callbacks/
+>>>>>>> update
 rivers/
-_draft/
