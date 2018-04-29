@@ -18,7 +18,7 @@ var config = {
 	};
 
 var feeds = [
-	"https://feeds.pinboard.in/rss/secret:3a1c08125534b037d055/u:frankmeeuwsen/t:microlink/",
+	"https://feeds.pinboard.in/rss/u:frankmeeuwsen/t:microlink/",
 	"https://www.inoreader.com/stream/user/1006530244/tag/user-broadcasted"
 	];
 
