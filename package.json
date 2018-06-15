@@ -9,8 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "alphanumeric-id": "^1.0.1",
+    "array-sort": "^1.0.0",
     "davereader": "^0.6.8",
     "handlebars": "^4.0.11",
-    "moment": "^2.22.1"
+    "moment": "^2.22.1",
+    "stats-filelist": "^1.0.1"
   }
 }

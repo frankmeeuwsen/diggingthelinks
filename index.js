@@ -1,6 +1,7 @@
 const reader = require ("davereader");
 const utils = require ("daveutils");
 const fs = require ("fs");
+const alphanumeric = require('alphanumeric-id');
 
 const readerDataFolder = "./";
 const myOutputFolder = "_draft/";
@@ -19,7 +20,8 @@ var config = {
 
 var feeds = [
 	"https://feeds.pinboard.in/rss/u:frankmeeuwsen/t:microlink/",
-	"https://www.inoreader.com/stream/user/1006530244/tag/user-broadcasted"
+	"https://www.inoreader.com/stream/user/1006530244/tag/user-broadcasted",
+	"http://frank.micro.blog/feed.xml"
 	];
 
   var source = "---\r\n"+
@@ -52,7 +54,7 @@ function createDraft(item){
   var template = Handlebars.compile(source);
   var result = template(data);
 
-  var f = myOutputFolder + moment().format('YYYY-MM-DD')+'-'+item.id+'.md';
+  var f = myOutputFolder + moment().format('YYYY-MM-DD')+'-'+alphanumeric(6)+'.md';
   utils.sureFilePath (f, function () {
   	fs.writeFile (f, result, function(err){
          if (err) return console.log(err);
